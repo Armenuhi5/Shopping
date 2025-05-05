@@ -1,0 +1,165 @@
+body{
+    position: relative;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+}
+ul{
+    list-style: none;
+}
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(to right, #000428, #004e92);
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        li{
+            button{
+                border: none;
+                background-color: transparent;
+                color: #f2f2f2;
+                text-transform: uppercase;
+                cursor: pointer;
+                font-size: 20px;
+                transition: all 0.3s;
+                &:hover {
+                    text-shadow: white 0px 8px 20px;
+                }
+            }
+        }
+    }
+}
+.container {
+    max-width: 1440px;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 80px;
+    background: linear-gradient(to left, #000428, #004e92);
+    position: relative;
+    button{
+        display: inline-block;
+        border-radius: 10px;
+        padding: 8px;
+        margin: 10px;
+        background-color: #004e92;
+        color: white;
+        border: 1px solid white;
+        cursor: pointer;
+        &:hover{
+            background-color: #004e928e;
+        }
+    }
+}
+.product{
+    text-align: center;
+    width: 300px;
+    transition: all 0.3s;
+    border: 1px solid #004e92;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+    &:hover{
+        transform: scale(1.1);
+    }
+    img{
+        max-width: 270px;
+        max-height: 230px;
+        margin-top: 10px;
+    }
+}
+.basketDiv{
+    width: 345px;
+    max-height: 285px;
+    overflow-y: auto;
+    position: absolute;
+    top: 68px;
+    right: 16px;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 6px;
+    background: linear-gradient(to right, #00042859, #004e926b);
+    h2{
+        background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+        border-radius: 6px;
+    }
+
+}
+.miniDiv{
+    background: linear-gradient(to right, #00042872, #004e9262);
+    color: white;
+    border: 1px solid gainsboro;
+    border-radius: 6px;
+    position: relative;
+    font-size: 12px;
+    img{
+        display: inline-block;
+        width: 140px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    p{
+        font-size: 14px;
+    }
+    button{
+        display: inline-block;
+        border-radius: 10px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: #004e928e;
+        }
+    }
+    .delete{
+        position: absolute;
+        top: 2px;
+        right: 12px;
+    }
+    .credit{
+        position: absolute;
+        bottom: 2px;
+        right: 12px;
+    }
+}
+.divCard{
+    position: absolute;
+    width: 400px;
+    height: 250px;
+    top: 200px;
+    background: linear-gradient(to right, #000428, #004e92);
+    border-radius: 10px;
+    input{
+        display: flex;
+        padding: 4px 10px 4px 2px;
+        margin: 20px;
+    }
+}
+h1{
+    margin: 15px;
+    font-size: 24px;
+}
+h2{
+    font-size: 20px;
+}
+.not_m{
+    margin-bottom: 10px;
+}
+.pay{
+    color: white;
+    font-size: 36px;
+    padding-top: 60px;
+    i{
+        color: green;
+        font-size: 46px;
+    }
+}
